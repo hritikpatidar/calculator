@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logical Operators</title>
+        <script>
+
+            // Logical OR operator 
+               /* var num=10;
+                var num1 = 20;
+                var num3 = "false";
+
+
+                if(num > num1 || num1 < num  ){
+                    alert("this is true value");
+                }else{
+                    alert("this is false vlaue");  //output is false
+                }
+
+                //ture value
+                if(num < num1){
+                    alert("this is ture value");        // output is ture
+                }else{
+                    alert("this is false value");
+                }
+                
+                //true value
+                if(num > num1 || num1 < num || num3  ){
+                    alert("this is true value");        //value is true
+                }else{
+                    alert("this is false vlaue");
+                }
+
+
+                // true value
+                if(num > 12 || num1 > 21 ){
+                    alert("this is true value");
+                }else{
+                    alert("this is false vlaue");       // output is false
+                }
+
+
+                // 1 || 0 value
+                if(1||0){       // 1 is a true value and 0 is a false vlaue
+                    alert("true");      // this value is a true
+                }else{
+                    alert("false");
+                }
+
+                // null,undifine , 0 value is a false vlaue 
+                //1 is first true vlaue
+
+                if (null || 0){
+                    alert("value is true");
+                }else{
+                    alert("value is false");
+                }
+
+
+                if (null || undefined || 0 || 0){
+                    alert(" 1 value is true");
+                }else{
+                    alert(" 0 value is false");
+                }
+            */
+
+            // Logical AND operator
+               /* let time= 12;
+                let minutes = 30;
+                //true value
+                if(time == 12 && minutes == 30){
+                    alert("time is 12:30");
+                }else{
+                    alert("time is wrong");
+                }
+
+                //false value
+                if("time" === 12 && minutes == 30){
+                    alert("time is 12:30");
+                }else{
+                    alert("time is wrong");
+                }
+                */
+
+
+            //user id password with prompt
+
+           /* let userName = prompt("who are you ?",'')
+
+            if(userName === "Admin"){
+                let pass = prompt("Password", "")
+                if(pass ==="Admin"){
+                    alert("welcome");
+                }else if(pass === '' || pass === null){
+                    alert("Canceled");
+                }else{
+                    alert("wrong password")
+                }
+            }else if(userName === "" || userName === null){
+                alert("canceled");
+            }else{
+                alert("i don't know you")
+            }
+            */
+
+
+            //?? 
+
+            let width = null;
+            let height = null;
+
+            let area = (height ?? 100) * (width ?? 50);
+            alert(area); // output is 5000
+
+            let area1 = height ?? 100 * width ?? 50;
+            alert(area1);  //output is 0
+
+            let area2 = height ?? (100 * width) ?? 50;
+            alert(area2);   //output is 0
+        </script>
+    </head>
+    <body>
+        <p id="logical">hello</p>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expretion</title>
+    <script>
+       
+        function add(){
+            // let x = document.querySelector("#fvalue").value ;
+            // let a = parseInt(x);
+            // console.log(x)
+            // let y = document.querySelector("#lvalue").value ;
+            // let b = parseInt(y);
+            // console.log(y);
+            // var z = a + b;
+            // alert(z);
+            document.getElementById("operator").setAttribute("value","+");
+           
+           
+        }
+        function sub(){
+            document.getElementById("operator").setAttribute("value","-");
+        }
+        function multi(){
+            document.getElementById("operator").setAttribute("value","*");
+           
+        }
+        function div(){
+            document.getElementById("operator").setAttribute("value","/");
+           
+        }
+        function reminder(){
+            document.getElementById("operator").setAttribute("value","%");
+           
+        }
+        function exponent(){
+            document.getElementById("operator").setAttribute("value","**");
+           
+        }
+
+        let result = () => {
+
+            let x = document.querySelector("#fvalue").value;
+            let num1 = parseInt(x)
+            console.log(x);
+            
+            let z = document.querySelector("#lvalue").value;
+            let num2 = parseInt(z)
+            console.log(z);
+
+            let y = document.querySelector("#operator").value ;
+            switch(y){
+                case "+":
+                    var x1 = num1 + num2;
+                    console.log(x1);
+                break;
+                case "-":
+                    var x1 = num1 - num2;   
+                    console.log(x1);
+                break;
+                case "*":
+                    var x1 = num1 * num2;
+                    console.log(x1);
+                break;
+                case "/":
+                    var x1 = num1 / num2;   
+                    console.log(x1);
+                break;
+                case "%":
+                    var x1 = num1 % num2;
+                    console.log(x1);
+                break;
+                case "**":
+                    var x1 = num1 ** num2;   
+                    console.log(x1);
+                break;
+            }
+        
+            
+            
+        }
+        
+        
+    </script>
+</head>
+<body>
+    <form>
+       
+        <label>first value</label>
+        <input id="fvalue" type="text"  placeholder="Enter First Value"  /><br><br>
+
+        <label>Operator</label>
+        <input id="operator" type="text" value="" placeholder="Enter Your Operator" /><br/><br>
+
+        <label>second value</label>
+        <input id="lvalue" type="text" placeholder="Enter Second Vlaue" /><br/><br>
+
+        <p id="value"></p>
+        <button type="button" onClick="add()">+</button>
+        <button type="button" onclick="sub()">-</button>
+        <button type="button" onclick="multi()">*</button>
+        <button type="button" onclick="div()">/</button>
+        <button type="button" onclick="reminder()">%</button>
+        <button type="button" onclick="exponent()">**</button>
+
+        <button type="button" onclick="result()">Result</button>
+    </form>
+</body>
+</html>

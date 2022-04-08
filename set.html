@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // set is a collection of unique value 
+        let mySet = new Set();
+
+        console.log(mySet);
+
+        mySet.add("name");
+        mySet.add(123);
+        mySet.add(true);
+        mySet.add("hello");
+        mySet.add(123);   // set is not add this value beacuse it is a alredy set value
+        mySet.add("name")   //same thing 
+        mySet.add(23.33);
+        mySet.add("kishor")
+        console.log(mySet);
+        console.log(mySet.has("name"));     //this is return true or false vlaue.kya ye value mySet ke ander he ya nhi he 
+        //console.log(mySet.delete("name"));  // any vlaue delete this your choice
+        console.log(mySet.size);
+        //console.log(mySet.clear());     // clear all values
+        console.log("helo",mySet.values());
+        console.log(mySet);
+
+
+
+
+        //-----------------------------iterating over set--------------------------------------------------//
+
+
+        // two types over iterate in set method 
+        //1. for.....of
+        //2. forEach();
+
+        for (let item of mySet){
+            console.log(item);
+        }
+
+        mySet.forEach( (item)=>{
+            console.log(item);
+        } )
+
+
+        //------------------------------convert set to array--------------------------------//
+
+
+
+        let mySet1 = Array.from(mySet)
+            console.log(mySet1);
+
+
+    </script>
+</body>
+</html>

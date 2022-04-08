@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <p id="array"></p>
+    
+
+
+
+    <script>
+        let student = [
+            {name:"ritik", age:35, email:"hritikpatidar1810@gmail.com"},
+            {name:"abhishek", age:30, email:"abhishek@gmail.com"}, 
+            {name:"harshita", age:21, email:"harshita@gmail.com"}, 
+            {name:"ankush", age:18, email:"ankush@gmail.com"} 
+        ]
+        console.log(student);
+        for(i=0;i<student.length;i++){
+            if(student[i].age >= 25){
+                
+                console.log(student[i].name + "," + student[i].age + "," + student[i].email)
+            
+            }
+        }
+       
+
+
+        // student.pop();
+        // console.log(student);
+
+        // student.push({ name:"ankush" ,age:45});
+        // console.log(student);
+
+        // student.shift();
+        // console.log('after shift',student);
+
+        // student.unshift({name:"kishor",age:66})
+        // console.log('unshift',student);
+
+        // student.splice(1,1 ,{ name:"pinkesh",age:15, email:"pinkehs@gmail.com"})
+        // console.log(student);
+       
+        // for( i = 0; i < student.length; i++){
+        //     console.log(student[i].name +" "+ student[i].age + " " + student[i].email )
+        // }
+
+    </script>
+</body>
+</html>

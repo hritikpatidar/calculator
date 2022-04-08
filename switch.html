@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+    <script>
+        let value = prompt("enter your option", "");
+        switch(value){
+            case "add":
+                let first = prompt("enter first value", "");
+                prompt("addition","+" )
+                let second = prompt("enter second value", "");
+                var z = +first+ + second 
+                alert(z); 
+                break;
+            case "sub":
+                let value1 = prompt("enter first value","");
+                prompt("substraction","-" )
+                let value2 = prompt("enter sencond vlaue","");
+                alert( value1 - value2 );
+                break;
+            case "multi":
+                let value3 = prompt("enter first value","");
+                prompt("multiplication","*")
+                let value4 = prompt("enter second vlaue","");
+                alert( value3 * value4 );
+                break;
+            case "div":
+                let value5 = prompt("enter first value","");
+                prompt("division","/");
+                let value6 = prompt("enter second value","");
+                alert( value5 / value6 );
+                break;
+            
+            case "rem" :
+                let value7 = prompt("enter first value","");
+                prompt("reminder","%");
+                let value8 = prompt("enter second value","");
+                alert( value7 % value8 );
+                break;
+            
+            case "expo" :
+                let value9 = prompt("enter first value","");
+                prompt("exponention","**");
+                let value10 = prompt("enter second value","");
+                alert( value9 ** value10 );
+                break;
+
+        }
+        
+
+    </script>
+</head>
+<body>
+       <p id="output"></p> 
+</body>
+</html>

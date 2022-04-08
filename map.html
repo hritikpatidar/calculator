@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+
+            let map = new Map(); 
+
+            //  map.set("name","ritik");
+            //  map.set("surname","patidar");
+            //  map.set(1,"neemuch")
+            // alert( map.get("name") );
+            // alert( map.get("surname") );
+            // alert( map.get(1) );
+
+            let student = new Map([
+                ["ritik",25],   
+                ["ankush",26],
+                ["shradha",21]
+
+            ]);
+
+            //set the value in map method 
+            student.set("name","ritik");
+            student.set("surname","patidar");
+            student.set(1,"neemuch");
+
+
+            //get the data in using for...of loop 
+
+            // iterate over key (name)
+            for(let name of student.keys() ){
+                //console.log(name);
+            }
+            // iterate over value (age)
+            for( let age of student.values() ){
+                //console.log(age);
+            }
+            // iterate over both (key and value)
+            for (let both of student){
+                //console.log(both);
+                //alert(both);
+            }
+
+
+
+            //get the data in using forEach method 
+
+            // use to forEach method and get the key and value
+            student.forEach( (value,key)=>{
+                console.log(key);
+                console.log(value);
+            } );
+
+
+
+
+            // converting map to array 
+            
+
+            //how to converting map to array
+            let myArray = Array.from(student);
+            console.log(' convert',myArray);
+
+            //how to converting map keys to array
+            let myKeysArray = Array.from(student.keys());
+            console.log('convert key',myKeysArray);
+
+            //how to converting map values to array
+            let myValuesArray = Array.from(student.values());
+            console.log(myValuesArray);
+
+
+
+        </script>
+    </body>
+</html>

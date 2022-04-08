@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+
+    <p id="name"></p>
+    
+    <script>
+        // let username = "ritik"
+        // function myFunction(){
+        //     username="patidar"
+        //     let msg = "hello, my name is " +username;
+        //     alert(msg);
+        // }
+        // alert(username);// exequte code line by line 
+        // myFunction();
+        // alert(username); //
+
+        function myFun(age){
+            if(age >= 18){
+                return true;
+            }else{
+                alert("you are ander 18")
+            }
+        }
+
+        let age = prompt("enter your age",18);
+        if( myFun(age)){
+            alert("access granted")
+        }else{
+            alert("access denied")
+        }
+    </script>
+</body>
+</html>
